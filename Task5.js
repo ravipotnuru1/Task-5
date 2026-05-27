@@ -140,8 +140,16 @@ console.log(arr5.lastIndexOf(2));
 
 let numb = [100, 2, 55, 1,9]
 console.log(numb.sort());   
-// we got wrong ouput here  [1,100,2,55,9] 
-// actual output should be [0,1,2,55,100]
+    // we got wrong ouput here  [1,100,2,55,9] 
+
+    // Lets compare wrong output 
+
+let comp = numb.sort((L,H)=>{
+    return L-H
+})
+console.log("Correct Output : "+comp);  // Just to compare wrong ouput with actual ouput
+
+    // actual output should be [0,1,2,55,100]
 
 //19. reverse()
 
